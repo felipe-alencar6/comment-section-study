@@ -1,0 +1,48 @@
+body {
+  background-color: hsl(210, 60%, 98%);
+  font-size: 16px;
+  font-weight: 500;
+}
+#body {
+  background-color: white;
+  padding: 15px;
+  width: fit-content;
+  margin: auto;
+  margin-top: 2em;
+}
+
+h3 {
+  display: flex;
+}
+
+#three {
+  background-color: blue;
+  color: white;
+  height: auto;
+  width: 25px;
+  text-align: center;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+.comment {
+  height: auto;
+  padding: 5px;
+  margin: 10px 0px;
+  background-color: hsl(211, 68%, 94%);
+}
+
+.name {
+}
+
+input {
+}
+
+#newComment {
+  height: 60px;
+  width: 250px;
+  margin-top: 5px;
+  border: solid 2px;
+  border-radius: 10px;
+  padding: 5px;
+}
