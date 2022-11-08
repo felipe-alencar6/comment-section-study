@@ -26,7 +26,6 @@ export class MainPageComponent implements OnInit, AfterViewInit {
   @ViewChild('commentSpace', { read: ViewContainerRef })
   entry!: ViewContainerRef;
 
-  varTeste = 'xxx';
   @ViewChild('commentInput') commentLine!: ElementRef;
   @ViewChild('nameInput') nameLine!: ElementRef;
   log3() {
@@ -37,7 +36,7 @@ export class MainPageComponent implements OnInit, AfterViewInit {
 
   @ViewChild('view')
   viewElementRef!: ElementRef;
-
+  user = 'fgelipe';
   ngAfterViewInit(): void {}
 
   @ViewChild('commentSpace') commentSpace!: ElementRef;
