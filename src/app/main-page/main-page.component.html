@@ -1,28 +1,51 @@
-<div id="body">
-  <h3>
-    Notifications
-    <div id="three">3</div>
-  </h3>
-  <div class="comment">
-    <div class="name">Mark Webber</div>
-    <div #view>Hi, my name is Mark and I'm from Brazil, whats up?</div>
+<p-messages [(value)]="msgs" severity="info"></p-messages>
+
+<div id="body" class="container">
+  <section><div class="lead">Send us your message!</div></section>
+  <br />
+  <div class="comment p-3 d-flex">
+    <div>
+      <img
+        src="\assets\daniel-k-cheung-cPF2nlWcMY4-unsplash.jpg"
+        alt=""
+        class="shadow"
+      />
+    </div>
+    <section class="align-self-center ms-2">
+      <div class="name">Felipe Alencar</div>
+      <div #view>Hi, my name is Felipe and I'm from Brazil, whats up?</div>
+      <div class="text-secondary">{{ time | date: "short" }}</div>
+    </section>
   </div>
   <div #commentSpace></div>
   <div #commentSpace2></div>
 
   <div id="newComment">
-    <input #nameInput id="name" type="text" placeholder="Write your name" />
+    <textarea
+      #nameInput
+      class=""
+      id="nameInput"
+      type="text"
+      placeholder="Write your name"
+    ></textarea>
     <br />
-    <input
+    <textarea
       #commentInput
-      id="message"
+      class="w-100"
+      id="commentInput"
       placeholder="Write your comment"
       type="text"
-    />
+    ></textarea>
+    <div class="d-flex justify-content-end">
+      <button
+        (click)="log3()"
+        class="btn btn-sm border buttonHover animate__animated animate__backInLeft"
+        style="background-color: hsl(211, 68%, 94%)"
+      >
+        Send
+      </button>
+    </div>
+
     <br /><br />
   </div>
-  <br />
-  <button (click)="log3()">Comment</button>
-  <button (click)="log3()">Answer</button>
-  <app-comment></app-comment>
 </div>

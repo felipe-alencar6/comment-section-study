@@ -1,4 +1,13 @@
-<p>comment works!</p>
 <div>{{ teste }}</div>
-<div>{{ name }}</div>
-<div>{{ comment }}</div>
+
+<div class="comment p-3 d-flex">
+  <div>
+    <img src="{{ photoUrl }}" alt="" class="shadow" />
+  </div>
+
+  <section class="align-self-center ms-2">
+    <div class="name">{{ name }}</div>
+    <div>{{ comment }}</div>
+    <div class="text-secondary">{{ time | date: "short" }}</div>
+  </section>
+</div>

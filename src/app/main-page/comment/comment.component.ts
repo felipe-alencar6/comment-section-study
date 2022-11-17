@@ -9,6 +9,9 @@ export class CommentComponent implements OnInit {
   @Input() teste!: string;
   @Input() comment!: string;
   @Input() name!: string;
+  @Input() photoUrl!: string;
+
+  time = new Date();
 
   constructor() {}
 
