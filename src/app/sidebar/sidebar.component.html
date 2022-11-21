@@ -1,56 +1,70 @@
 <section class="sidebar">
   <div class="list-group">
     <a
-      href="#aboutWebsite"
       class="list-group-item list-group-item-action active"
+      role="button"
       aria-current="true"
-      data-toggle="collapse"
-      aria-expanded="false"
-      aria-controls="aboutWebsite"
+      data-bs-toggle="collapse"
+      data-bs-target="#aboutWebsite"
     >
-      The current link item
+      About this website
     </a>
-    <a href="#" class="list-group-item list-group-item-action"
-      >A second link item</a
+    <div
+      class="collapse card"
+      id="aboutWebsite"
+      style="border-radius: 0px; border: 0px"
     >
-    <a href="#" class="list-group-item list-group-item-action"
-      >A third link item</a
+      <div class="card-body border">
+        <h3 class="card-title">About this website</h3>
+        <p class="card-text">
+          This website is a study case where I practice <b>Angular</b>,
+          <b>TypeScript</b>, <b>Bootstrap</b> and <b>PrimeNG</b>. Here you can
+          also find my resume and personal projects.
+        </p>
+      </div>
+    </div>
+    <a
+      class="list-group-item list-group-item-action"
+      role="button"
+      aria-current="true"
+      data-bs-toggle="collapse"
+      data-bs-target="#aboutMe"
+      >About me</a
     >
-    <a href="#" class="list-group-item list-group-item-action"
-      >A fourth link item</a
+    <div
+      class="collapse card"
+      id="aboutMe"
+      style="border-radius: 0px; border: 0px"
     >
-    <a class="list-group-item list-group-item-action disabled"
-      >A disabled link item</a
+      <div class="card-body border">
+        <h3 class="card-title">About me</h3>
+        <p class="card-text">
+          I am a software Developer that lives in Brazil and is always learning
+          something new.
+        </p>
+      </div>
+    </div>
+
+    <a
+      class="list-group-item list-group-item-action"
+      role="button"
+      aria-current="true"
+      data-bs-toggle="collapse"
+      data-bs-target="#aboutCareer"
+      >Career Objectives</a
     >
+    <div
+      class="collapse card"
+      id="aboutCareer"
+      style="border-radius: 0px; border: 0px"
+    >
+      <div class="card-body border">
+        <h3 class="card-title">My Objectives</h3>
+        <p class="card-text">
+          My main objective is to be a Senior Software Developer, mainly working
+          with Frontend.
+        </p>
+      </div>
+    </div>
   </div>
 </section>
-<div class="collapse" id="#aboutWebsite">xxxxxx</div>
-<p>
-  <a
-    class="btn btn-primary"
-    data-toggle="collapse"
-    href="#collapseExample"
-    role="button"
-    aria-expanded="false"
-    aria-controls="collapseExample"
-  >
-    Link with href
-  </a>
-  <button
-    class="btn btn-primary"
-    type="button"
-    data-bs-toggle="collapse"
-    data-bs-target="#collapseExample"
-    aria-expanded="false"
-    aria-controls="collapseExample"
-  >
-    Button with data-target
-  </button>
-</p>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-    richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes
-    anderson cred nesciunt sapiente ea proident.
-  </div>
-</div>

@@ -37,7 +37,7 @@
           id="navbarNav"
         >
           <ul class="navbar-nav">
-            <li class="nav-item navbarBorder text-center">
+            <li class="nav-item navbarBorder text-center" role="button">
               <a
                 class="nav-link active navHover text-light"
                 aria-current="page"
@@ -45,15 +45,17 @@
                 >Home</a
               >
             </li>
-            <li class="nav-item navbarBorder text-center">
+            <li class="nav-item navbarBorder text-center" role="button">
               <a class="nav-link text-light navHover" (click)="showResume()"
-                >Currículo</a
+                >Curriculum</a
               >
             </li>
-            <li class="nav-item navbarBorder text-center">
-              <a class="nav-link text-light navHover" href="#">Pricing</a>
+            <li class="nav-item navbarBorder text-center" role="button">
+              <a class="nav-link text-light navHover" (click)="showPortfolio()"
+                >Portfolio</a
+              >
             </li>
-            <li class="nav-item navbarBorder text-center">
+            <li class="nav-item navbarBorder text-center" role="button">
               <a class="nav-link text-light navHover">Disabled</a>
             </li>
             <li

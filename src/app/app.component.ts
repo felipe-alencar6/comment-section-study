@@ -9,4 +9,5 @@ export class AppComponent {
   title = 'notificationPage';
   showMainPage = true;
   showResume = false;
+  showPortfolio = false;
 }

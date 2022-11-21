@@ -12,6 +12,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { MessagesModule } from 'primeng/messages';
 import { ResumeComponent } from './resume/resume.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ResumeComponent } from './resume/resume.component';
     NavbarComponent,
     SidebarComponent,
     ResumeComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
