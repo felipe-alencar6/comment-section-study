@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'notificationPage';
-  showMainPage = true;
+  showMainPage = false;
   showResume = false;
-  showPortfolio = false;
+  showPortfolio = true;
 }
