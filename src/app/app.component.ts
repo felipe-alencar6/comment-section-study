@@ -10,4 +10,5 @@ export class AppComponent {
   showMainPage = true;
   showResume = false;
   showPortfolio = false;
+  showResumePt = false;
 }

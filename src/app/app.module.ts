@@ -13,6 +13,8 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { MessagesModule } from 'primeng/messages';
 import { ResumeComponent } from './resume/resume.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
+import { ResumePtbrComponent } from './resume-ptbr/resume-ptbr.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     SidebarComponent,
     ResumeComponent,
     PortfolioComponent,
+    ResumePtbrComponent,
   ],
   imports: [
     BrowserModule,
@@ -31,6 +34,7 @@ import { PortfolioComponent } from './portfolio/portfolio.component';
     BrowserAnimationsModule,
     MatSliderModule,
     MessagesModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

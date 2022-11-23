@@ -1,15 +1,27 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, DoCheck, OnInit, ChangeDetectorRef } from '@angular/core';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-resume',
   templateUrl: './resume.component.html',
-  styleUrls: ['./resume.component.scss']
+  styleUrls: ['./resume.component.scss'],
 })
-export class ResumeComponent implements OnInit {
+export class ResumeComponent implements OnInit, DoCheck {
+  myModel!: boolean;
 
-  constructor() { }
+  constructor(
+    private component: AppComponent,
+    private cdRef: ChangeDetectorRef
+  ) {}
 
-  ngOnInit(): void {
+  ngDoCheck(): void {
+    setTimeout(() => {
+      this.component.showResumePt = this.myModel;
+      if (this.component.showResumePt == true) {
+        this.component.showResume = false;
+      }
+    }, 0);
   }
 
+  ngOnInit(): void {}
 }
